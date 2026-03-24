@@ -1,69 +1,99 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #eee;
+  font-family: Arial, sans-serif;
+}
+
 .UserCard {
   display: flex;
   flex-direction: column;
-  border: grey 2px solid;
-  border-radius: 10px;
-  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  width: 320px;
+  background-color: white;
+  overflow: hidden;
 }
-.photo {
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
-  border: rgb(246, 243, 243) 8px solid;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  height: 200px;
-  width: 200px;
+
+.first-part {
+  text-align: center;
+  padding: 15px 0 5px;
 }
-.first-part,
-.content-part,
-.last-part {
+
+.first-part h1 {
+  font-size: 13px;
+  color: gray;
+  margin: 0;
+}
+.content-part {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px 20px;
 }
-h1 {
-  font-size: 12px;
-  color: grey;
+
+.photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid #f3f3f3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+.name {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
 .explanation {
-  font-family: Arial, sans-serif;
-  width: 250px;
-  font-size: 11px;
   text-align: center;
-  margin-bottom: 40px;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.4;
 }
+
 .btn {
-  width: 130px;
-  height: 40px;
+  width: 140px;
+  height: 42px;
   border-radius: 10px;
-  border: rgb(54, 126, 235) 1px solid;
+  border: none;
   background-color: rgb(54, 126, 235);
-  box-shadow: 0 4px 3px rgba(9, 45, 113, 0.5);
-  margin-bottom: 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(9, 45, 113, 0.4);
+  margin-bottom: 20px;
+  transition: 0.2s;
 }
+
 .btn:hover {
   background-color: rgb(84, 115, 160);
 }
+
 .last-part {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(31, 66, 103);
-  border-radius: 0 0 7px 7px;
-  font-family: Arial, sans-serif;
   height: 70px;
+  padding: 0 15px;
 }
-
 .stat-item {
   display: flex;
   align-items: center;
   color: rgb(195, 128, 132);
 }
-
-.stat-item img {
-  height: 20px;
-  width: auto;
-  margin-right: 10px;
+.stat-item i {
+  font-size: 18px;
+  margin-right: 8px;
+  color: rgb(195, 128, 132);
 }
 
 .stat-text {
@@ -75,10 +105,14 @@ h1 {
   font-size: 12px;
   font-weight: bold;
 }
-
 .value {
   color: white;
   font-size: 14px;
   font-weight: bold;
   margin-top: 2px;
+}
+.middle {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 20px;
 }
